@@ -165,4 +165,45 @@ function mostrarTiempo() {
 
 window.onload = function() {
   mostrarTiempo();
+  mensajeAleatorio()
 };
+
+const mensajes = [
+  "Eres la luz que ilumina mi vida.",
+  "Tu sonrisa es mi razón de ser feliz.",
+  "Cada día a tu lado es un regalo.",
+  "Eres el sueño que nunca quiero despertar.",
+  "No hay distancia que pueda separarnos.",
+  "Tus abrazos son mi refugio.",
+  "Eres mi inspiración constante.",
+  "Eres la pieza que le faltaba a mi rompecabezas.",
+  "Amar a alguien como tú es un privilegio.",
+  "Tu amor me hace sentir completo.",
+  "Eres el sol que ilumina mis días oscuros.",
+  "Siempre pienso en ti, incluso en mis sueños.",
+  "Eres la melodía que alegra mi corazón.",
+  "Eres mi confidente y mi mejor amiga.",
+  "Cada segundo a tu lado es un tesoro.",
+  "Eres el motivo de mi felicidad.",
+  "El mundo es un lugar mejor con tu amor.",
+  "Eres mi razón para levantarme cada mañana.",
+  "En tus brazos encuentro paz y tranquilidad.",
+  "Eres el mejor regalo que la vida me ha dado.",
+  "Eres mi compañera de aventuras.",
+  "Tu amor es el motor que impulsa mi vida.",
+  "Eres la dueña de mi corazón.",
+  "Contigo, el amor es infinito.",
+  "Eres la respuesta a todas mis oraciones.",
+  "Eres la razón por la que sonrío todos los días.",
+  "Tu amor es el combustible que alimenta mi alma.",
+  "Eres la persona con la que quiero envejecer.",
+  "Amar a alguien como tú es un sueño hecho realidad.",
+  "Eres la musa de mi inspiración.",
+  "Eres el amor de mi vida, hoy y siempre."
+]
+
+function mensajeAleatorio() {
+  let mensaje = Math.floor(Math.random() * mensajes.length);
+  document.getElementById('mensaje').textContent = mensajes[mensaje];
+  return
+}

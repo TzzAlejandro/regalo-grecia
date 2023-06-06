@@ -725,7 +725,7 @@ body.nav-active { overflow: hidden; }
 
 .footer {
   background-color: var(--charcoal);
-  padding-block: 60px 100px;
+  padding-block: 60px 60px;
   color: var(--light-gray);
 }
 
@@ -782,6 +782,36 @@ body.nav-active { overflow: hidden; }
 }
 
 
+.spotify {
+  height: 100px;
+}
+
+.footer-grid-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+}
+
+.footer-spotify a {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-random {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 
 
@@ -805,6 +835,15 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
   }
 
+  
+.footer-grid-list {
+  display: grid;
+  height: 200px;
+  width: 100%;
+  gap: 20px;
+	grid-template-columns: 1fr 1fr
+}
+
 
 
   /**
@@ -814,6 +853,8 @@ body.nav-active { overflow: hidden; }
   .project-card .card-content { padding: 40px; }
 
 }
+
+
 
 
 
